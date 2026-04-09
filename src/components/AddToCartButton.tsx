@@ -7,6 +7,7 @@ type Props = {
     id: string
     name: string
     price: number
+    promo_price: number | null
     image_url: string
   }
   className?: string
