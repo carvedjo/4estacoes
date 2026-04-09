@@ -5,7 +5,7 @@ import styles from "@/styles/Cart.module.css"
 import Link from "next/link"
 
 function Cart() {
-  const { items, removeFromCart, total } = useCart()
+  const { items, removeFromCart, updateQuantity, total } = useCart()
 
   if (items.length === 0) {
     return (
@@ -32,6 +32,16 @@ function Cart() {
             </div>
             <div className={styles.itemInfo}>
               <h2 className={styles.itemNome}>{item.plant.name}</h2>
+              <div className={styles.itemQtd}>
+                <span>Quantidade:</span>
+                <input
+                  className={styles.qtdInput}
+                  type="number"
+                  min="1"
+                  value={item.quantity}
+                  onChange={(e) => updateQuantity(item.plant.id, Number(e.target.value))}
+                />
+              </div>
               <div className={styles.itemPrecos}>
                 {item.plant.promo_price ? (
                   <>

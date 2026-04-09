@@ -26,6 +26,12 @@
   gap: 20px;
 }
 
+.cartIcon {
+  width: 24gpx;
+  height: 24px;
+  object-fit: contain;
+}
+
 .links {
   display: flex;
   gap: 28px;

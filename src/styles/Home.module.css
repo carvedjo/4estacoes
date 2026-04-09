@@ -188,6 +188,7 @@
   width: 100%;
   height: 100%;
   object-fit:cover;
+  border-radius: 12px 12px 0 0;
 }
 .cardImgVerde { background: var(--verde); }
 .cardImgAmarelo { background: var(--amarelo); }

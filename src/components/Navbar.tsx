@@ -32,7 +32,7 @@ function Navbar() {
       <div className={styles.right}>
         <div className={styles.cartWrapper}>
           <button className={styles.cartBtn} onClick={() => setCartOpen(!cartOpen)}>
-            🛒
+            <img src="images\icons\cart.png" alt="Cart" className={styles.cartIcon} />
             {totalItems > 0 && (
               <span className={styles.cartCount}>{totalItems}</span>
             )}
