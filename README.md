@@ -2,6 +2,18 @@
 
 Online plant shop with an admin panel built as a portfolio project.
 
+## Demo
+
+### Home & Shop
+![Homepage&Shop](./4estacoesGIFhome.gif)
+
+### Admin
+![Admin](./4estacoesGIFAdmin.gif)
+
+## Links
+- [Live Demo](https://4estacoes-shop.vercel.app)
+- Admin access — contact me at edd7carvalho@gmail.com
+
 ## Stack
 - Next.js 15 (App Router)
 - TypeScript
@@ -17,16 +29,15 @@ Online plant shop with an admin panel built as a portfolio project.
 - Image upload via Supabase Storage
 
 
-## Admin Access
-To access the admin panel, contact me at edd7carvalho@gmail.com.
-
 ## Local Setup
+
 ```bash
 npm install
 npm run dev
 ```
 
 Create a `.env.local` file with your Supabase keys:
+
 ```
 NEXT_PUBLIC_SUPABASE_URL=...
 NEXT_PUBLIC_SUPABASE_ANON_KEY=...
