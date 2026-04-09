@@ -7,7 +7,7 @@ function Footer() {
       <div className={styles.logo}>4 Estações</div>
       <div className={styles.links}>
         <Link href="/loja">Loja</Link>
-        <Link href="/sobre">Sobre</Link>
+        
       </div>
       <p className={styles.copy}>© 2025 4 Estações</p>
     </footer>

@@ -23,7 +23,7 @@ async function Home() {
             PLANTA<br />O TEU<br />AMBIENTE
           </h1>
           <p className={styles.heroSub}>
-            Plantas com alma para espaços<br />com personalidade.
+            Dá vida ao teu espaço.
           </p>
           <Link href="/loja" className={styles.heroBtn}>
             Explorar Loja →
@@ -39,22 +39,22 @@ async function Home() {
         <p className={styles.tickerText}>
           <span>Plantas</span><span className={styles.dot}>●</span>
           <span>Entrega em todo o país</span><span className={styles.dot}>●</span>
-          <span>Grow with good vibes</span><span className={styles.dot}>●</span>
-          <span>Anos 70 Forever</span><span className={styles.dot}>●</span>
+          <span>Planta o teu ambiente</span><span className={styles.dot}>●</span>
+          <span>Coleção de primavera disponível</span><span className={styles.dot}>●</span>
           <span>Groovy & Green</span><span className={styles.dot}>●</span>
         </p>
         <p className={styles.tickerText} aria-hidden="true">
           <span>Plantas</span><span className={styles.dot}>●</span>
           <span>Entrega em todo o país</span><span className={styles.dot}>●</span>
-          <span>Grow with good vibes</span><span className={styles.dot}>●</span>
-          <span>Anos 70 Forever</span><span className={styles.dot}>●</span>
+          <span>Planta o teu ambiente</span><span className={styles.dot}>●</span>
+          <span>Coleção de primavera disponível</span><span className={styles.dot}>●</span>
           <span>Groovy & Green</span><span className={styles.dot}>●</span>
         </p>
         <p className={styles.tickerText} aria-hidden="true">
           <span>Plantas</span><span className={styles.dot}>●</span>
           <span>Entrega em todo o país</span><span className={styles.dot}>●</span>
-          <span>Grow with good vibes</span><span className={styles.dot}>●</span>
-          <span>Anos 70 Forever</span><span className={styles.dot}>●</span>
+          <span>Planta o teu ambiente</span><span className={styles.dot}>●</span>
+          <span>Coleção de primavera disponível</span><span className={styles.dot}>●</span>
           <span>Groovy & Green</span><span className={styles.dot}>●</span>
         </p>
       </div>
