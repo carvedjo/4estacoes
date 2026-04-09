@@ -1,0 +1,186 @@
+.main {
+  padding: 48px 40px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.loading {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', serif;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.voltar {
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--preto);
+  text-decoration: none;
+  margin-bottom: 24px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.voltar:hover {
+  border-color: var(--preto);
+}
+
+.titulo {
+  font-family: 'Titan One', sans-serif;
+  font-size: 2rem;
+  color: var(--preto);
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid var(--preto);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.row .field {
+  flex: 1;
+}
+
+.label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.input {
+  padding: 12px 16px;
+  border: 2px solid var(--preto);
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+.input:focus {
+  box-shadow: 3px 3px 0 var(--preto);
+}
+
+.textarea {
+  padding: 12px 16px;
+  border: 2px solid var(--preto);
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  resize: vertical;
+  min-height: 100px;
+  transition: box-shadow 0.2s ease;
+}
+
+.textarea:focus {
+  box-shadow: 3px 3px 0 var(--preto);
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.saveBtn {
+  background: var(--preto);
+  color: var(--amarelo);
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-family: 'Titan One', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.saveBtn:hover {
+  opacity: 0.85;
+}
+
+.cancelBtn {
+  background: none;
+  border: 2px solid var(--preto);
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--preto);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cancelBtn:hover {
+  background: var(--preto);
+  color: var(--amarelo);
+}
+
+.uploadOr {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.4;
+  margin: 4px 0;
+}
+
+.fileInput {
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.uploading {
+  font-size: 0.85rem;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.preview {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--preto);
+  margin-top: 8px;
+}
+@media (max-width: 768px) {
+  .main {
+    padding: 24px 16px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

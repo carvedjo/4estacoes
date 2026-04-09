@@ -1,0 +1,167 @@
+.main {
+  padding: 48px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.titulo {
+  font-family: 'Titan One', sans-serif;
+  font-size: 2.5rem;
+  color: var(--preto);
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid var(--preto);
+}
+
+.vazio {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  opacity: 0.5;
+  margin-bottom: 24px;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  border: 3px solid var(--preto);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--preto);
+  background: var(--branco);
+}
+
+.itemImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid var(--preto);
+  flex-shrink: 0;
+  background: var(--verde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.itemImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.itemInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.itemNome {
+  font-family: 'Titan One', sans-serif;
+  font-size: 1.1rem;
+  color: var(--preto);
+}
+
+.itemPreco {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--preto);
+}
+
+.itemQtd {
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
+
+.remover {
+  background: none;
+  border: 2px solid var(--preto);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.remover:hover {
+  background: var(--preto);
+  color: var(--amarelo);
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 3px solid var(--preto);
+  margin-bottom: 24px;
+  font-family: 'Titan One', sans-serif;
+  font-size: 1.3rem;
+  color: var(--preto);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--preto);
+  color: var(--amarelo);
+  border: none;
+  padding: 16px 32px;
+  font-family: 'Titan One', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.itemPrecos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.itemPreco {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.itemPrecoAntigo {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.itemPrecoPromo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e53e3e;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 24px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

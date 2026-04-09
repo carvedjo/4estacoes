@@ -1,0 +1,238 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 60px;
+  background: var(--branco);
+  border-bottom: 2px solid var(--preto);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--preto);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+
+.links a {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--preto);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.links a:hover {
+  border-color: var(--preto);
+}
+
+.basket {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--preto);
+}
+.cartWrapper {
+  position: relative;
+}
+
+.cartBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  padding: 4px;
+}
+
+.cartCount {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: var(--preto);
+  color: var(--amarelo);
+  font-size: 0.65rem;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartDropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 300px;
+  background: var(--branco);
+  border: 3px solid var(--preto);
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 var(--preto);
+  padding: 16px;
+  z-index: 200;
+}
+
+.cartEmpty {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.5;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.cartList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cartItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.cartItemName {
+  font-family: 'Titan One', sans-serif;
+  font-size: 0.85rem;
+  color: var(--preto);
+}
+
+.cartItemQty {
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.cartItemPrice {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cartItemRemove {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+}
+
+.cartItemRemove:hover {
+  opacity: 1;
+}
+
+.cartTotal {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Titan One', sans-serif;
+  font-size: 1rem;
+  padding: 12px 0;
+  border-top: 2px solid var(--preto);
+  margin-bottom: 12px;
+}
+
+.cartCheckout {
+  display: block;
+  background: var(--preto);
+  color: var(--amarelo);
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-family: 'Titan One', sans-serif;
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease;
+}
+
+.cartCheckout:hover {
+  opacity: 0.85;
+}
+.cartItemPrice {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cartItemPriceOld {
+  text-decoration: line-through;
+  opacity: 0.4;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.cartItemPricePromo {
+  color: #e53e3e;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--branco);
+    padding: 16px 24px;
+    border-bottom: 2px solid var(--preto);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .links.open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+  
+}

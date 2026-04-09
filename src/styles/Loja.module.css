@@ -1,0 +1,164 @@
+.main {
+  padding: 48px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 40px;
+  border-bottom: 3px solid var(--preto);
+  padding-bottom: 24px;
+}
+
+.titulo {
+  font-family: 'Titan One', sans-serif;
+  font-size: 3.5rem;
+  color: var(--preto);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.sub {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--preto);
+  opacity: 0.5;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid var(--preto);
+  box-shadow: 4px 4px 0 var(--preto);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background: var(--branco);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--preto);
+}
+
+.cardImg {
+  height: 200px;
+  border-bottom: 3px solid var(--preto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardImgGreen { background: var(--verde); }
+.cardImgYellow { background: var(--amarelo); }
+.cardImgPink { background: var(--rosa); }
+.cardImgBlue { background: var(--azul);}
+.cardImgRed { background: var(--vermelho);}
+
+.cardBody {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardCat {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--preto);
+  opacity: 0.5;
+}
+
+.cardName {
+  font-family: 'Titan One', sans-serif;
+  font-size: 1.1rem;
+  color: var(--preto);
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.cardPrice {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--preto);
+}
+
+.cardAdd {
+  color: var(--preto);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--preto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor:pointer;
+  transition: all 0.2s ease;
+}
+.cardAdd:hover {
+  box-shadow: 1px 1px 0 var(--preto);
+}
+.cardAdd:active{
+  transform: scale(0.8);
+}
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardPriceOld {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--preto);
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.cardPricePromo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #e53e3e;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 24px;
+  }
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+
+  .cards {
+    justify-content: center;
+  }
+}

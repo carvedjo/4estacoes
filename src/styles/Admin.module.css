@@ -1,0 +1,167 @@
+.main {
+  padding: 48px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid var(--preto);
+}
+
+.titulo {
+  font-family: 'Titan One', sans-serif;
+  font-size: 2rem;
+  color: var(--preto);
+}
+
+.logoutBtn {
+  background: none;
+  border: 2px solid var(--preto);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.logoutBtn:hover {
+  background: var(--preto);
+  color: var(--amarelo);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 3px solid var(--preto);
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 var(--preto);
+  background: var(--branco);
+}
+
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.itemNome {
+  font-family: 'Titan One', sans-serif;
+  font-size: 1rem;
+  color: var(--preto);
+}
+
+.itemCat {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.itemPreco {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.itemActions {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn {
+  background: var(--amarelo);
+  border: 2px solid var(--preto);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.editBtn:hover {
+  opacity: 0.8;
+}
+
+.deleteBtn {
+  background: none;
+  border: 2px solid var(--preto);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background: var(--preto);
+  color: var(--amarelo);
+}
+
+.addBtn {
+  background: var(--preto);
+  color: var(--amarelo);
+  border: none;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-family: 'Titan One', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.addBtn:hover {
+  opacity: 0.85;
+}
+@media (max-width: 768px) {
+  .main {
+    padding: 24px 16px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .itemInfo {
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .itemActions {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .addBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
