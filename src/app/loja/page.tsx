@@ -1,3 +1,4 @@
+export const revalidate = 0
 import { supabase } from "@/lib/supabase"
 import styles from "@/styles/Loja.module.css"
 import Link from "next/link"
